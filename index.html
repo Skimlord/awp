@@ -18,9 +18,39 @@
         justify-content: center;
       }
 
+      h3 {
+        text-align: center;
+        margin-bottom: 40px;
+      }
+
+      footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50px;
+        background-color: black;
+        color: white;
+      }
+
       .nav {
         height: 70px;
         background-color: black;
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .menu {
+        display: flex;
+        flex-flow: row wrap;
+        color: white;
+        gap: 10px;
+        margin-right: 20px;
+      }
+
+      .menu-item {
+        list-style: none;
+        display: flex;
+        align-items: center;
       }
 
       .app-header {
@@ -42,59 +72,125 @@
       }
 
       .box {
-        border: 1px solid;
+        background-color: gainsboro;
         width: 24%;
         padding: 20px;
+        font-size: small;
+      }
 
+      .video {
+        width: 49%;
       }
 
       @media (max-width: 1070px) {
+        .container {
+          width: 80%;
+        }
+
         .box {
-            width: 49%;
+          width: 49%;
         }
       }
 
       @media (max-width: 730px) {
         .container {
-            flex-flow: column
+          flex-flow: column;
+          width: 90%;
+        }
+
+        .video {
+          width: 100%;
         }
 
         .box {
-            width: 100%;
+          width: 100%;
         }
       }
     </style>
   </head>
   <body>
     <nav class="nav">
-
+      <img src="" alt="" class="menu-logo" />
+      <ul class="menu">
+        <li class="menu-item">Inicio</li>
+        <li class="menu-item">Contactos</li>
+        <li class="menu-item">Videos</li>
+        <li class="menu-item">Servicios</li>
+      </ul>
     </nav>
-    <header class="app-header">
-      Apliacaciones Web Progresivas
-    </header>
-    <section>
-      <div class="container">
-        <div class="box">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus eius,
-          atque molestias ipsa quibusdam ea animi repudiandae officiis sit quidem.
-          Esse eos cum accusamus eveniet expedita quae tempore quia nam!
+    <header class="app-header">Apliacaciones Web Progresivas</header>
+    <div style="margin-bottom: 50px">
+      <h3>Servicios</h3>
+      <section>
+        <div class="container">
+          <div class="box">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus
+            eius, atque molestias ipsa quibusdam ea animi repudiandae officiis
+            sit quidem. Esse eos cum accusamus eveniet expedita quae tempore
+            quia nam!
+          </div>
+          <div class="box">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus
+            eius, atque molestias ipsa quibusdam ea animi repudiandae officiis
+            sit quidem. Esse eos cum accusamus eveniet expedita quae tempore
+            quia nam!
+          </div>
+          <div class="box">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus
+            eius, atque molestias ipsa quibusdam ea animi repudiandae officiis
+            sit quidem. Esse eos cum accusamus eveniet expedita quae tempore
+            quia nam!
+          </div>
+          <div class="box">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus
+            eius, atque molestias ipsa quibusdam ea animi repudiandae officiis
+            sit quidem. Esse eos cum accusamus eveniet expedita quae tempore
+            quia nam!
+          </div>
         </div>
-        <div class="box">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus eius,
-          atque molestias ipsa quibusdam ea animi repudiandae officiis sit quidem.
-          Esse eos cum accusamus eveniet expedita quae tempore quia nam!
+      </section>
+    </div>
+    <div style="margin-bottom: 50px">
+      <h3>Videos</h3>
+      <section>
+        <div class="container">
+          <iframe
+            src="https://www.youtube.com/embed/WyFIg1kSKwo"
+            height="250"
+            frameborder="0"
+            class="video"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+          <iframe
+            src="https://www.youtube.com/embed/WyFIg1kSKwo"
+            height="250"
+            frameborder="0"
+            class="video"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+          <iframe
+            src="https://www.youtube.com/embed/WyFIg1kSKwo"
+            height="250"
+            frameborder="0"
+            class="video"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+          <iframe
+            src="https://www.youtube.com/embed/WyFIg1kSKwo"
+            height="250"
+            frameborder="0"
+            class="video"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
         </div>
-        <div class="box">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus eius,
-          atque molestias ipsa quibusdam ea animi repudiandae officiis sit quidem.
-          Esse eos cum accusamus eveniet expedita quae tempore quia nam!
-        </div>
-        <div class="box">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus eius,
-          atque molestias ipsa quibusdam ea animi repudiandae officiis sit quidem.
-          Esse eos cum accusamus eveniet expedita quae tempore quia nam!
-        </div>
-      </div>
-    </section>
+      </section>
+    </div>
+    <footer>
+      <p>Hiram Rubio 2022</p>
+    </footer>
   </body>
 </html>
