@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+
+      .nav {
+        height: 70px;
+        background-color: black;
+      }
+
+      .app-header {
+        height: 70px;
+        background-color: grey;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 30px;
+      }
+
+      .container {
+        width: 70%;
+        display: flex;
+        flex-flow: row wrap;
+        gap: 10px;
+        justify-content: space-between;
+      }
+
+      .box {
+        border: 1px solid;
+        width: 24%;
+        padding: 20px;
+
+      }
+
+      @media (max-width: 1070px) {
+        .box {
+            width: 49%;
+        }
+      }
+
+      @media (max-width: 730px) {
+        .container {
+            flex-flow: column
+        }
+
+        .box {
+            width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="nav">
+
+    </nav>
+    <header class="app-header">
+      Apliacaciones Web Progresivas
+    </header>
+    <div class="container">
+      <div class="box">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus eius,
+        atque molestias ipsa quibusdam ea animi repudiandae officiis sit quidem.
+        Esse eos cum accusamus eveniet expedita quae tempore quia nam!
+      </div>
+      <div class="box">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus eius,
+        atque molestias ipsa quibusdam ea animi repudiandae officiis sit quidem.
+        Esse eos cum accusamus eveniet expedita quae tempore quia nam!
+      </div>
+      <div class="box">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus eius,
+        atque molestias ipsa quibusdam ea animi repudiandae officiis sit quidem.
+        Esse eos cum accusamus eveniet expedita quae tempore quia nam!
+      </div>
+      <div class="box">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus eius,
+        atque molestias ipsa quibusdam ea animi repudiandae officiis sit quidem.
+        Esse eos cum accusamus eveniet expedita quae tempore quia nam!
+      </div>
+    </div>
+  </body>
+</html>
